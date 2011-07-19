@@ -8,11 +8,11 @@ import itertools
 from pattern import patterns
 
 if __name__ == '__main__':
-    if sys.version_info[2] >= 6:
+    if sys.version_info [1] >= 2 and sys.version_info[2] >= 6:
         #itertools.combinationsはPython2.6以上から実装されている
         #しかし、実験室上の環境ではバージョンが古く、利用できないため
         #分岐させている
-        list = itertools.combinations(range(0,9), 2)
+        list = itertools.combinations(range(0, 9), 2)
     else:
         list = [(a, b) for a in xrange(0, 10) for b in xrange(a+1, 10)]
     distances = [patterns[i].hamming_distance(patterns[j]) for i,j in list]

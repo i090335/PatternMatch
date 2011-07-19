@@ -4,7 +4,6 @@
     created by 25090335 Kohki Miki on 2011/07/19
 '''
 import random
-from copy import deepcopy
 
 class Pattern(object):
     def __init__(self, tuple, name=""):
