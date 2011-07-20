@@ -4,6 +4,7 @@
     created by 25090335 Kohki Miki on 2011/07/19
 '''
 import sys
+print sys.path
 import itertools
 from pattern import patterns
 
